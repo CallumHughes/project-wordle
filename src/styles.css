@@ -197,6 +197,50 @@ h1 {
 }
 
 /*
+  KeyBoard styles
+*/
+
+.keyboard-row-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  margin: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard-letter {
+  cursor: default;
+  width: 28px;
+  text-align: center;
+  padding: 4px;
+  background: var(--color-gray-700);
+  border-radius: 4px;
+}
+
+.keyboard-letter.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+.keyboard-letter.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+.keyboard-letter.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
+}
+
+.restart-game-button {
+  padding: 4px;
+  background: var(--color-gray-700);
+  border-radius: 4px;
+}
+
+/*
   Modal styles
 
   HACK: I'm doing this in a quick and dirty way.
